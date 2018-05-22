@@ -3,12 +3,12 @@
   GovTrack - Congressional District Map (https://www.govtrack.us/congress/members/map)
   
   <!- In your HTML, create an article tag that will serve as your main representative component. -->
-  <!-- In this section create elements for the representative's image, name, district info, and political affiliation. -->
-  <!-- Give the element a unique identifier. In this component, create a sub-component for basic information using the section tag. -->
-  <!-- Beneath the basic information, you will create a sub-component, using a section tag, to list any committees the candidate is serving on. -->
-  
-  <!-- The last component will hold links to any legislation that your representative has enacted.  -->
-<!-- Make sure you use good BEM-style class names for each element in your components. Put a comment above each component explaining what it is. --> 
+<!-- In this section create elements for the representative's image, name, district info, and political affiliation. -->
+<!-- Give the element a unique identifier. In this component, create a sub-component for basic information using the section tag. -->
+<!-- Beneath the basic information, you will create a sub-component, using a section tag, to list any committees the candidate is serving on. -->
+
+<!-- The last component will hold links to any legislation that your representative has enacted.  -->
+<!-- Make sure you use good BEM-style class names for each element in your components. Put a comment above each component explaining what it is. -->
 <!-- http://getbem.com/naming/ -->
 
 
@@ -26,30 +26,40 @@
   <!-- Congressional Rep Component -->
   <article id="mainRepComponent" class="representative">
     <!-- Basic info component -->
-    <section class="representative representative--basic">
-      <img class="representative representative__image representative--basic"/>
-      <h2>name</h2>
-      <p>district info</p>
-      <p>political affiliation</p>
+    <section class="representative representative--basic-info">
+      <img src="https://www.govtrack.us/data/photos/400081-200px.jpeg" class="representative representative__image representative__basic-info"
+      />
+      <h2 class="representative__name">Jim Cooper</h2>
+      <p class="representative__district-info">Cooper is the representative for Tennessee’s 5th congressional district. He has served since Jan 7, 2003. Cooper is
+        next up for reelection in 2018.</p>
+      <p class="representative__political-affiliation">Democrat</p>
     </section>
     <!--Serving-on committee list component -->
     <section class="representative">
       <ul>
-        <li class="representative__list-element">committee</li>
-        <li class="representative__list-element">committee</li>
-        <li class="representative__list-element">committee</li>
+        <li class="representative__list-element">House Committee on Armed Services Ranking Member</li>
+        <li class="representative__list-element">House Committee on Oversight and Government Reform</li>
       </ul>
-
     </section>
     <!--List of legislation enacted component -->
     <section class="representative representative--legislation">
       <ul>
         <li>
-          <a class="representative__link representative__list-item representative--legislation" href="somewhere">Legislative thingy 1</a>
+          <a class="representative__link representative__list-item" href="https://www.govtrack.us/congress/bills/112/hr482">H.R. 482 (112th): Water Heater Rating Improvement Act of 2011</a>
         </li>
         <li>
-          <a href="somewhere">Legislative thingy 2</a>
+          <a class="representative__link representative__list-item" href="https://www.govtrack.us/congress/bills/110/hr928">H.R. 928 (110th): Inspector General Reform Act of 2008</a>
         </li>
+        <li>
+          <a class="representative__link representative__list-item" href="https://www.govtrack.us/congress/bills/103/hjres297">H.J.Res. 297 (103rd): To designate 1994 as “The Year of Gospel Music”</a>
+        </li>
+        <li>
+          <a class="representative__link representative__list-item" href="https://www.govtrack.us/congress/bills/101/hr5667">H.R. 5667 (101st): To amend the Water Resources Development Act of 1974 to establish a deadline for the transfer of jurisdiction of the Big South Fork National River and Recreation</a>
+        </li>
+        <li>
+          <a class="representative__link representative__list-item" href="somewhere">H.R. 971 (101st): Telephone Operator Consumer Services Improvement Act of 1990</a>
+        </li>
+
       </ul>
     </section>
   </article>
