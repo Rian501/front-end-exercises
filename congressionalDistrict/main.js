@@ -4,9 +4,9 @@ console.log('Woooooooo, main.js is hooked up!');
 let repComponent = document.querySelector('#mainRepComponent');
 
 let newSection = document.createElement("section");
-newSection.innerHTML = '<p>Win win win</p>'
-// let missionStatement = document.createTextNode("Win at all costs.");
-// newSection.appendChild(missionStatement);
+// newSection.innerHTML = '<p>Win win win</p>'
+let missionStatement = document.createTextNode("Win at all costs.");
+newSection.appendChild(missionStatement);
 
 repComponent.appendChild(newSection);
 
