@@ -7,21 +7,21 @@ let nextSentence = ["Your", "face", "really", "smells", "like", "dog", "buns"];
     the array as the sole argument. It should iterate over the array
     and output the words to the browser console.
 */
-function addExcitement(theWordArray, puncMark) {
+const addExcitement = (theWordArray, puncMark) => {
 
   // Each time the for loop executes, you're going to add one more word to this string
   let buildMeUp = "";
   let marks = "";
-  for (let i = 1; i < theWordArray.length+1; i++) {
-    buildMeUp = `${buildMeUp} ${theWordArray[i-1]}`
-    if (i%3===0) {
+  for (let i = 1; i < theWordArray.length + 1; i++) {
+    buildMeUp = `${buildMeUp} ${theWordArray[i - 1]}`
+    if (i % 3 === 0) {
       marks += puncMark
       buildMeUp += marks;
     }
     console.log(buildMeUp);
   }
 
-}
+};
 
 // Invoke the function and pass in the array
 // addExcitement(sentence)
