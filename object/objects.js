@@ -95,3 +95,13 @@ const voteURL = {
   TNvoters: "some.url.com",
   otherVoters: "some.other.url.com"
 }
+
+// After you have defined all the objects for representing the data, write a corresponding function for each one whose purpose is to change the state of the object.Then invoke each function, and pass a reference to the correct object to it and modify a property.
+
+
+function changeObjState(anyObject, thePropertyToChange, theNewValue) {
+  anyObject.thePropertyToChange = theNewValue;
+};
+
+
+// Use document.createElement() to build an < article > element representing Elizabeth.The id property of the element should be her congressional district, and its content should be her platform data.Once the element has been created, insert it into the DOM.
