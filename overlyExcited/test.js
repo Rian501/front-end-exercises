@@ -1,0 +1,1 @@
+for (i = 0; i < 1e2;) console.log((++i % 5 ? "" : "Chicken") + (i % 7 ? "" : "Monkey") || i);
