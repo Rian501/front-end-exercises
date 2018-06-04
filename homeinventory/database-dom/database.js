@@ -19,6 +19,15 @@ console.log("fetched data", fetchedData);
 
 const myStuff = document.querySelector('#myStuff');
 
+////regular FOR LOOP type:
+// for (type in fetchedData) {
+//   console.log("fetchedData[type]", fetchedData[type]);
+//   for (let i=0; i<fetchedData[type].length; i++) {
+//     console.log("fetched", fetchedData[type][i])
+//   }
+// }
+
+
 // Iterate over every data set in the database and create a < section > component.
 for (type in fetchedData) {
   // console.log(fetchedData[type]);

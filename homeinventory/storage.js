@@ -105,7 +105,7 @@ const saveDatabase = function (databaseObject, localStorageKey) {
 // }
 
 // // Persist the database to localStorage
-// saveDatabase(HomeInventoryDatabase, "HomeInventory")
+saveDatabase(HomeInventoryDatabase, "HomeInventory")
 
 
 // let fetchedData = loadDatabase("HomeInventory");
