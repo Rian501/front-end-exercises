@@ -7,7 +7,8 @@ let messArtElement = document.querySelector('#messages');
 // Create five(5) section elements, each with a class of message, and with textContent of your choosing.
 
 const m1 = document.createElement('section')
-m1.setAttribute('class', 'message');
+// m1.setAttribute('class', 'message');
+m1.className ='message' //this is a lot easier than 'setAttribute'
 m1.textContent = "Hey Aunt Denise, what's up?";
 const m2 = document.createElement('section')
 m2.setAttribute('class', 'message')
