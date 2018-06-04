@@ -66,6 +66,8 @@ console.log('jobs array', jobsArr);
 const theDOM = document.querySelector('#mainContent');
 jobsArr.forEach((job) => {
   let zeesJob = document.createElement('article');
+  let info = document.createTextNode(`At ${job.business} I was a ${job.role} from ${job.startDate} til ${job.endDate}`);
+  zeesJob.appendChild(info);
   zeesJob.setAttribute('id', job.business);
   theDOM.appendChild(zeesJob);
 });
