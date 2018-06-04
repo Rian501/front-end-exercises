@@ -14,5 +14,6 @@ This repo is where I will store my own work on exercises found in the [NSS Clien
 # Book Two Challenges
 1. [Congressional District](https://github.com/nashville-software-school/client-side-mastery/blob/master/book-2-the-novice/chapters/HTML_COMPONENTS.md)
 1. Overly Excited (arrow functions)
-1. [Objects (Elizabeth Sanger)](https://github.com/nashville-software-school/client-side-mastery/blob/master/book-2-the-novice/chapters/JS_OBJECTS.md)1. Object Creation (not yet uploaded)
+1. [Objects (Elizabeth Sanger)](https://github.com/nashville-software-school/client-side-mastery/blob/master/book-2-the-novice/chapters/JS_OBJECTS.md)
+1. Object Creation (not yet uploaded)
 1. [Home Inventory](https://github.com/nashville-software-school/client-side-mastery/blob/master/book-2-the-novice/chapters/JS_DATA.md)
