@@ -15,4 +15,8 @@ const artHeadSet = document.querySelectorAll('.article__header');
 artHeadSet.forEach((artHead) => {
   // console.log("for each does work", artHead);
   artHead.classList.add('important');
-})
+});
+
+
+console.log(artHeadSet[1].classList);
+//the output is a DOMtokenList which gives an array of the classes, and then a value that is just a string with them all

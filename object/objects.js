@@ -108,4 +108,11 @@ changeObjState(voteURL, "TNvoters", "some.new.url");
 console.log('new url', voteURL.TNvoters);
 
 
-// Use document.createElement() to build an < article > element representing Elizabeth.The id property of the element should be her congressional district, and its content should be her platform data.Once the element has been created, insert it into the DOM.
+// Use document.createElement() to build an < article > element representing Elizabeth.
+const lizArticle = document.createElement('article');
+//The id property of the element should be her congressional district, and its content should be her platform data.
+lizArticle.setAttribute('id', congressionalDistrict.districtNumber);
+//Once the element has been created, insert it into the DOM.
+document.getElementById('mainContent').appendChild(lizArticle);
+
+//(the article currently has no content)
