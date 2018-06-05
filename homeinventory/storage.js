@@ -71,12 +71,12 @@ const postcardBox = {
 
 HomeInventoryDatabase.crafts.push(vintageInkwell);
 HomeInventoryDatabase.crafts.push(postcardBox);
-HomeInventoryDatabase.furniture.push(writingDesk);
-HomeInventoryDatabase.furniture.push(futon);
-HomeInventoryDatabase.furniture.push(couch);
-HomeInventoryDatabase.furniture.push(functionalBakersRack);
-HomeInventoryDatabase.furniture.push(decorativeBakersRack);
-HomeInventoryDatabase.furniture.push(dresser);
+HomeInventoryDatabase.furniture.push(writingDesk, futon, couch, functionalBakersRack, decorativeBakersRack, dresser);
+// HomeInventoryDatabase.furniture.push(futon);
+// HomeInventoryDatabase.furniture.push(couch);
+// HomeInventoryDatabase.furniture.push(functionalBakersRack);
+// HomeInventoryDatabase.furniture.push(decorativeBakersRack);
+// HomeInventoryDatabase.furniture.push(dresser);
 HomeInventoryDatabase.electronics.push(tv);
 HomeInventoryDatabase.electronics.push(dvdPlayer);
 
