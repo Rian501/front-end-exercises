@@ -69,16 +69,16 @@ const postcardBox = {
   description: "purchased in Malaysia, I like this because it looks like a mini treasure chest and smells like the incense I carried in it for so long."
 }
 
-HomeInventoryDatabase.crafts.push(vintageInkwell);
-HomeInventoryDatabase.crafts.push(postcardBox);
+HomeInventoryDatabase.crafts.push(vintageInkwell, postcardBox);
+// HomeInventoryDatabase.crafts.push(postcardBox);
 HomeInventoryDatabase.furniture.push(writingDesk, futon, couch, functionalBakersRack, decorativeBakersRack, dresser);
 // HomeInventoryDatabase.furniture.push(futon);
 // HomeInventoryDatabase.furniture.push(couch);
 // HomeInventoryDatabase.furniture.push(functionalBakersRack);
 // HomeInventoryDatabase.furniture.push(decorativeBakersRack);
 // HomeInventoryDatabase.furniture.push(dresser);
-HomeInventoryDatabase.electronics.push(tv);
-HomeInventoryDatabase.electronics.push(dvdPlayer);
+HomeInventoryDatabase.electronics.push(tv,dvdPlayer);
+// HomeInventoryDatabase.electronics.push(dvdPlayer);
 
 console.log(HomeInventoryDatabase);
 
