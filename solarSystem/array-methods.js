@@ -9,8 +9,11 @@ const sectionEl = document.createElement('section');
 let planetString = '';
 
 planets.forEach((planet) => {
-  planetString += ` ${planet}`;
+  planetString += ` 
+    <p>${planet}</p>
+  `;
 })
+
 
 sectionEl.innerText = planetString;
 
