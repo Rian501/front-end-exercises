@@ -41,8 +41,18 @@ console.log(UpCasePlanets);
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 */
 
+let EEsArr = planets.filter( (planetString) => {
+  return planetString.includes('e');
+})
 
+console.log('eees', EEsArr);
 
 
 // Use the reduce method to create a sentence from the words in the following array
 const words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"]
+
+const reducedSent = words.reduce((buildStr, nextWord) => {
+  return `${buildStr} ${nextWord}`
+})
+
+console.log('reduced', reducedSent);
