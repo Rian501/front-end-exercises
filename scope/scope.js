@@ -39,7 +39,7 @@ console.log(conjoinedWord);
 
 
 // Simon Says
-const locations = [[1, 1], [1, 2], [1, 3], [2, 1], [2, 2], [2, 3]]
+const locations = [[1, 1], [6, 2], [1, 3], [2, 1], [2, 2], [2, 3]]
 
 let counter = 0;
 for (let k = 0; k < locations.length; k++) {
