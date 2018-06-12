@@ -1,5 +1,17 @@
 // Your job is to create an object that represents a financial advisor and has the following properties and methods.
+const animal = {
+  legs: 6,
+  alive: true
+}
 
+const myNewObj = Object.create(animal, {
+  ears: {
+    value: 2
+  }
+  //here is where you define the stuff for the obj
+})
+
+console.log(myNewObj);
 
 const financialAdvisor = Object.create({}, {
   // Company(enumerable, writable, property)
@@ -30,27 +42,64 @@ const financialAdvisor = Object.create({}, {
   worth: {
     enumerable: false,
     value: function () {
-      
+      // When you invoke the worth() method, it should look at every transaction and calculate the advisor's net worth.
+
+      // so for each transaction, we add up all the prices - loop through transactions, access each price (build an array of just the prices, 
+      let pricesArr = financialAdvisor.portfolio.transactions.map((transactionObj) => {
+        console.log("each indiv transaction", transactionObj);
+        return transactionObj.price;
+      })
+      console.log("pricesArr", pricesArr);
+      //then reduce that array to its total)
+      let total = pricesArr.reduce((currentTotal, next) => {
+        return currentTotal + next;
+      })
+
+      console.log("total", total);
+
+
+      //adv - separate buys from sells, then add up all of each, subtract the buys from the sells
+
     }
   },
   // Purchase(non - enumerable, method) - This method takes a stock ticker symbol, a quantity, and a price as arguments
   purchase: {
-    value: function () {
-      
+    value: function (ticker, quantity, price) {
+      financialAdvisor.portfolio.transactions.push(
+        {
+          stock: ticker,
+          quantity,
+          price,
+          transactionType: "purchase"
+        }
+      )
     }
-    
+
   },
   // Sell(non - enumerable, method) - This method takes a stock ticker symbol, a quantity, and a price as arguments
   sell: {
     enumerable: false,
-    value: function () {
-      
+    value: function (ticker, quantity, price) {
+      financialAdvisor.portfolio.transactions.push(
+        {
+          stock: ticker,
+          quantity,
+          price,
+          transactionType: "sell"
+        }
+      )
     }
   }
 })
 
-
 // When sell() or purchase() are invoked, then the stock portfolio should be modified accordingly.
 
-// When you invoke the worth() method, it should look at every transaction and calculate the advisor's net worth.
+
+financialAdvisor.purchase("AAPL", 45, 45);
+financialAdvisor.sell("BUD", 5, 450);
+financialAdvisor.purchase("TVY", 415, 45);
+console.log('transactions', financialAdvisor);
+
+financialAdvisor.worth();
+
 
