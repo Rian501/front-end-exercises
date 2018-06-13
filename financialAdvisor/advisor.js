@@ -103,3 +103,26 @@ console.log('transactions', financialAdvisor);
 financialAdvisor.worth();
 
 
+
+
+
+// Challenge
+// Use document.createElement to build & display an HTML component to display the advisor's name, company, and specialty.
+// Iterate over the advisor's portfolio and use document.createDocumentFragment along with document.createElement to display some HTML components representing each stock owned by the advisor.
+
+
+
+
+// Advanced Challenge
+// Change the portfolio property value from an array to an object.Instead of it being a record of transactions, it should only store the advisor's current assets. Each invocation of sell or purchase should modify the advisor's holdings.
+
+// {
+//   "AAPL": {
+//     "shares": 152,
+//       "valuation": 30400
+//   },
+//   "MSFT": {
+//     "shares": 290,
+//       "valuation": 49300
+//   }
+// }
