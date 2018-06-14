@@ -1,9 +1,22 @@
 // Requirements
 // When the user enters in text into the text area and then clicks the create button, use a factory function that creates a new DOM component that has a border, and includes its own delete button.
+let cardCount = 0;
+let cardsDom = document.getElementById('cardSection');
+
+
 document.getElementById('submitCard').addEventListener('click', () => {
+  cardCount++;
   let userText = document.getElementById('userText').value;
   console.log('user text', userText);
-
+  let card = document.createElement('section');
+    card.className = 'card';
+    card.id = `card--${cardCount}`;
+    card.textContent = userText;
+  let delBtn = document.createElement('button');
+    delBtn.id = `delete--${cardCount}`;
+    delBtn.textContent = "Delete Card";
+  card.appendChild(delBtn);
+  cardsDom.appendChild(card);
 
 
 })
