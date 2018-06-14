@@ -2,16 +2,15 @@
 
 # dependencies
 /node_modules
-react-nss-db/node_modules
 
+# built 
+/dist
 
 # testing
 /coverage
-react-nss-db/coverage
 
 # production
 /build
-react-nss-db/build
 
 # misc
 .DS_Store
