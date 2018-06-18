@@ -69,44 +69,29 @@ const postcardBox = {
   description: "purchased in Malaysia, I like this because it looks like a mini treasure chest and smells like the incense I carried in it for so long."
 }
 
-HomeInventoryDatabase.crafts.push(vintageInkwell);
-HomeInventoryDatabase.crafts.push(postcardBox);
-HomeInventoryDatabase.furniture.push(writingDesk);
-HomeInventoryDatabase.furniture.push(futon);
-HomeInventoryDatabase.furniture.push(couch);
-HomeInventoryDatabase.furniture.push(functionalBakersRack);
-HomeInventoryDatabase.furniture.push(decorativeBakersRack);
-HomeInventoryDatabase.furniture.push(dresser);
-HomeInventoryDatabase.electronics.push(tv);
-HomeInventoryDatabase.electronics.push(dvdPlayer);
+HomeInventoryDatabase.crafts.push(vintageInkwell, postcardBox);
+HomeInventoryDatabase.furniture.push(writingDesk, futon, couch, functionalBakersRack, decorativeBakersRack, dresser);
+HomeInventoryDatabase.electronics.push(tv, dvdPlayer);
 
 console.log(HomeInventoryDatabase);
 
 const saveDatabase = function (databaseObject, localStorageKey) {
-  /*
-      Convert the Object into a string.
-  */
+  // Convert the Object into a string.
   const stringifiedDatabase = JSON.stringify(databaseObject)
-
-  /*
-      Create a key in local storage, and store the string
-      version of your inventory database as the value
-  */
+  // Create a key in local storage, and store the string version of your inventory database as the value
   localStorage.setItem(localStorageKey, stringifiedDatabase)
 }
 
-
+////THIS FUNCTION MOVED TO THE JS FILE WHERE RETRIEVAL WILL OCCUR:
 // const loadDatabase = function (localStorageKey) {
 //   // Get the string version of the database
 //   const databaseString = localStorage.getItem(localStorageKey)
-
 //   // Use JSON.parse() to convert the string back into an object
 //   return JSON.parse(databaseString)
 // }
 
 // // Persist the database to localStorage
-// saveDatabase(HomeInventoryDatabase, "HomeInventory")
+saveDatabase(HomeInventoryDatabase, "HomeInventory")
 
-
+////CALLING THE RETRIEVE FUNCTION (save for other js file)
 // let fetchedData = loadDatabase("HomeInventory");
-// console.log("fetched data", fetchedData);
