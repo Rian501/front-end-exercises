@@ -29,7 +29,9 @@ const ContactForm = {
     submitBtn.id = "submit"
     docFrag.appendChild(submitBtn);
     DOM.appendChild(docFrag);
-  }
+  },
+
+
 }
 
 module.exports = ContactForm;
