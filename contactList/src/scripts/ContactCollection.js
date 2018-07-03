@@ -7,7 +7,11 @@ const ContactCollection = {
 
   fetchCollection: (localStorageKey) => {
     const databaseString = localStorage.getItem(localStorageKey)
-    return JSON.parse(databaseString)
+    if (databaseString) {
+      return JSON.parse(databaseString);
+    } else {
+      return [];
+    }
   }
 }
 

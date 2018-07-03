@@ -32,6 +32,12 @@ const ContactForm = {
   },
 
 
+  saveNewContact: (newContactObj) => {
+    const contactArr = ContactCollection.fetchCollection("ContactListCollection");
+    contactArr.push(newContactObj);
+    ContactCollection.saveCollection(contactArr, "ContactListCollection");
+  }
+
 }
 
 module.exports = ContactForm;
